@@ -1,12 +1,19 @@
 Capstone Project by Ahsn Specs
 
 Table of Contents
+
 About
+
 Technical System Architecture
+
 Results
+
 References
+
 Installations
+
 About
+
 We created a prototype face recognition system based on three pre-trained CNN models that can identify faces and predict their gender, age, and emotions in an image or video.
 
 The prototype is designed to be implemented in the retail industry for different applications:
@@ -63,37 +70,32 @@ Age/Gender Prediction Explained and Codes: Chengwei
 Installations
 To run the model, please install the required Python packages using:
 
-bash
-Copy code
+
 pip install -r requirements.txt
 To run real-time demo:
 
-bash
-Copy code
+
 python face_reco_demo.py
 To run the face recognition model:
 
-bash
-Copy code
+
 python face_reco_base.py
 python face_reco_image.py
 python face_reco_video.py
+
 Image:
 
-python
-Copy code
+
 face = FaceImage()
 display_labeled_image(face, "sample/sample01.jpg")
 Video to Video:
 
-python
-Copy code
+
 labeled_video = FaceVideo("sample/sample02.mp4")
 labeled_video.create_mp4_video("sample02vid.mp4")
 Video to GIF:
 
-python
-Copy code
+
 labeled_video = FaceVideo("sample/sample02.mp4")
 labeled_video.create_animated_gif("sample02gif.gif")
 To train new faces for face identification:
@@ -101,6 +103,5 @@ Import photos to faces/name_of_person/001.jpg and run the codes again.
 
 To visualize face vectors of trained faces (using t-SNE dimension reduction):
 
-python
-Copy code
+
 face_recognizer.visualize_dataset()
